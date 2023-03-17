@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: fi.tuni.prog3.junitattainment.AttainmentTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec <<< FAILURE!
+fi.tuni.prog3.junitattainment.AttainmentTest.testConstructorWithInvalidArguments()  Time elapsed: 0.062 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:71)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:37)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:2952)
+	at fi.tuni.prog3.junitattainment.AttainmentTest.testConstructorWithInvalidArguments(AttainmentTest.java:31)
+
+fi.tuni.prog3.junitattainment.AttainmentTest.testCompareTo()  Time elapsed: 0.006 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:35)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
+	at fi.tuni.prog3.junitattainment.AttainmentTest.testCompareTo(AttainmentTest.java:50)
+

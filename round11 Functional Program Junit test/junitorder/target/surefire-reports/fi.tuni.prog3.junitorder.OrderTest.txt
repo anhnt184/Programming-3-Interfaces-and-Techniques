@@ -1,0 +1,77 @@
+-------------------------------------------------------------------------------
+Test set: fi.tuni.prog3.junitorder.OrderTest
+-------------------------------------------------------------------------------
+Tests run: 62, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 0.118 sec <<< FAILURE!
+fi.tuni.prog3.junitorder.OrderTest.testGetEntryCount()  Time elapsed: 0.028 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <1> but was: <3>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+	at fi.tuni.prog3.junitorder.OrderTest.testGetEntryCount(OrderTest.java:264)
+
+fi.tuni.prog3.junitorder.OrderTest.testAddItemsByName()  Time elapsed: 0.004 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <1> but was: <5>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+	at fi.tuni.prog3.junitorder.OrderTest.testAddItemsByName(OrderTest.java:75)
+
+fi.tuni.prog3.junitorder.OrderTest.testAddItems()  Time elapsed: 0 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <1> but was: <3>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+	at fi.tuni.prog3.junitorder.OrderTest.testAddItems(OrderTest.java:55)
+
+fi.tuni.prog3.junitorder.OrderTest.testRemoveItems()  Time elapsed: 0.001 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <2> but was: <4>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+	at fi.tuni.prog3.junitorder.OrderTest.testRemoveItems(OrderTest.java:349)
+
+fi.tuni.prog3.junitorder.OrderTest.testOrderConstructorWithMultipleEntries()  Time elapsed: 0.001 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <2> but was: <5>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+	at fi.tuni.prog3.junitorder.OrderTest.testOrderConstructorWithMultipleEntries(OrderTest.java:593)
+
+fi.tuni.prog3.junitorder.OrderTest.testAddItemsByNameNegativeCount()  Time elapsed: 0.003 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:71)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:37)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:2952)
+	at fi.tuni.prog3.junitorder.OrderTest.testAddItemsByNameNegativeCount(OrderTest.java:83)
+
+fi.tuni.prog3.junitorder.OrderTest.testOrderConstructorWithNewItem()  Time elapsed: 0.001 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <1> but was: <4>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+	at fi.tuni.prog3.junitorder.OrderTest.testOrderConstructorWithNewItem(OrderTest.java:614)
+
+fi.tuni.prog3.junitorder.OrderTest.testAddItemsByNameZeroCount()  Time elapsed: 0.002 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:71)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:37)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:2952)
+	at fi.tuni.prog3.junitorder.OrderTest.testAddItemsByNameZeroCount(OrderTest.java:167)
+
+fi.tuni.prog3.junitorder.OrderTest.testItemEqualityWithNull()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "fi.tuni.prog3.junitorder.Order$Item.getName()" because "other" is null
+	at fi.tuni.prog3.junitorder.Order$Item.equals(Order.java:286)
+	at fi.tuni.prog3.junitorder.OrderTest.testItemEqualityWithNull(OrderTest.java:549)
+
